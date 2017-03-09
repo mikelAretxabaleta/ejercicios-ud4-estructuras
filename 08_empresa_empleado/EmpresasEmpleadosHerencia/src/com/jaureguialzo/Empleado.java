@@ -12,6 +12,7 @@ public abstract class Empleado {
 
     private Empresa empresa;
 
+
     public Empleado(String nombre, String apellidos, String fechaNacimiento, String fechaContrato) {
         this.nombre = nombre;
         this.apellidos = apellidos;

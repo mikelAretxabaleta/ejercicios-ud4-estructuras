@@ -5,6 +5,8 @@ package com.jaureguialzo;
  */
 public class Operario extends Empleado {
 
+
+
     private double salarioHora;
     private int horasContrato;
 

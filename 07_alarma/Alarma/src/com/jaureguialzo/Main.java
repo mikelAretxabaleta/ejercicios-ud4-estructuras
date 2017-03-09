@@ -12,7 +12,7 @@ public class Main {
 
         Alarma alarma = new Alarma();
 
-        int opcion = 0;
+        char opcion = '0';
         do {
             System.out.println("1. Activar alarma\n" +
                     "2. Desactivar alarma (necesario PIN)\n" +
@@ -21,8 +21,8 @@ public class Main {
 
             System.out.print("Opción: ");
             try {
-                opcion = Integer.parseInt(br.readLine());
-
+                opcion = (br.readLine().charAt(0));
+                System.out.println(Character.isDigit(opcion));
                 switch (opcion) {
                     case 1: {
                         System.out.println("INFO: Activando la alarma...");
